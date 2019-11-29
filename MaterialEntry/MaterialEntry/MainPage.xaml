@@ -4,12 +4,16 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:materialentry="clr-namespace:MaterialEntry"
              ios:Page.UseSafeArea="true"
              x:Class="MaterialEntry.MainPage">
     <StackLayout Visual="Material">
         <Label Text="Default" />
         <Entry Text="Text" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" />
         <Entry Placeholder="Placeholder" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" />
+        <Label Text="Customized" />
+        <materialentry:MyMaterialEntry Text="Text" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Orange" />
+        <materialentry:MyMaterialEntry Placeholder="Placeholder" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Orange" />
     </StackLayout>
 </ContentPage>
