@@ -13,7 +13,7 @@
         <Entry Text="Text" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" />
         <Entry Placeholder="Placeholder" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" />
         <Label Text="Customized" />
-        <materialentry:MyMaterialEntry Text="Text" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Orange" />
-        <materialentry:MyMaterialEntry Placeholder="Placeholder" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Orange" />
+        <materialentry:MyMaterialEntry Text="Text" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Orange" MyHandleColor="Red" />
+        <materialentry:MyMaterialEntry Placeholder="Placeholder" TextColor="White" PlaceholderColor="Green" BackgroundColor="YellowGreen" MyHighlightColor="Orange" MyHandleColor="BlueViolet" />
     </StackLayout>
 </ContentPage>

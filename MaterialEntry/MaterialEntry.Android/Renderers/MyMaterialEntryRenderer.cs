@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Android.Content;
-using Android.Content.Res;
+﻿using Android.Content;
 using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.Runtime;
 using Android.Support.V4.Content;
-using Android.Support.V4.View;
-using Android.Text;
 using Android.Widget;
 using Java.Lang;
 using MaterialEntry.Droid.Renderers;
