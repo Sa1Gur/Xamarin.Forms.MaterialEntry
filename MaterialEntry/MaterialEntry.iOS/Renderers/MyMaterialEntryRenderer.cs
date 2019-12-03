@@ -10,13 +10,25 @@ namespace MaterialEntry.iOS.Renderers
 {
     public class MyMaterialEntryRenderer : MaterialEntryRenderer
     {
+        protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
+        {
+            base.OnElementChanged(e);
+
+            TintCustomization(Control, e.NewElement as MyMaterialEntry);
+        }
+
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            base.OnElementPropertyChanged(sender, e);
+            base.OnElementPropertyChanged(sender, e);            
 
-            if (Control == null || sender == null) return;
+            TintCustomization(Control, sender as MyMaterialEntry);
+        }
 
-            if (sender is MyMaterialEntry customEntry)
+        private void TintCustomization(UITextField Control, MyMaterialEntry customEntry)
+        {
+            if (Control == null) return;
+
+            if (customEntry != null)
             {
                 UITextField textField = Control;
                 textField.BorderStyle = UITextBorderStyle.None;
